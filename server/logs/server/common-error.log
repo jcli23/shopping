@@ -1,0 +1,353 @@
+2019-11-08 18:01:53,670 ERROR 4348 [-/127.0.0.1/-/19ms POST /v1/saveUser] nodejs.ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\public\avatar\1573207313649ab-m9fcifaam-b10l5dc3d761dae41b0538211a98.png'
+ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\public\avatar\1573207313649ab-m9fcifaam-b10l5dc3d761dae41b0538211a98.png'
+errno: -4058
+code: "ENOENT"
+syscall: "open"
+path: "C:\\Users\\Administrator.CDEDUASK_PC\\Desktop\\shopping\\server\\app\\public\\avatar\\1573207313649ab-m9fcifaam-b10l5dc3d761dae41b0538211a98.png"
+name: "ENOENTError"
+pid: 4348
+hostname: stu8-63
+
+2019-11-08 18:02:46,692 ERROR 4348 [-/127.0.0.1/-/2ms POST /v1/saveUser] nodejs.ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\public\avatar\1573207366690ab-m9fcifaam-b10l5dc3d761dae41b0538211a98.png'
+ENOENTError: ENOENT: no such file or directory, open 'C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\public\avatar\1573207366690ab-m9fcifaam-b10l5dc3d761dae41b0538211a98.png'
+errno: -4058
+code: "ENOENT"
+syscall: "open"
+path: "C:\\Users\\Administrator.CDEDUASK_PC\\Desktop\\shopping\\server\\app\\public\\avatar\\1573207366690ab-m9fcifaam-b10l5dc3d761dae41b0538211a98.png"
+name: "ENOENTError"
+pid: 4348
+hostname: stu8-63
+
+2019-11-11 15:53:11,613 ERROR 2932 [-/127.0.0.1/-/32ms POST /v1/address] nodejs.MongoError: E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }
+    at Function.create (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\utils.js:149:22)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\operations\collection_ops.js:859:39
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 11000
+errmsg: "E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }"
+pid: 2932
+hostname: stu8-63
+
+2019-11-11 15:53:15,798 ERROR 2932 [-/127.0.0.1/-/11ms POST /v1/address] nodejs.MongoError: E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }
+    at Function.create (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\utils.js:149:22)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\operations\collection_ops.js:859:39
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 11000
+errmsg: "E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }"
+pid: 2932
+hostname: stu8-63
+
+2019-11-11 15:53:35,833 ERROR 2932 [-/127.0.0.1/-/8ms POST /v1/address] nodejs.MongoError: E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }
+    at Function.create (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\utils.js:149:22)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\operations\collection_ops.js:859:39
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 11000
+errmsg: "E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }"
+pid: 2932
+hostname: stu8-63
+
+2019-11-11 17:05:30,374 ERROR 2932 [-/127.0.0.1/-/9ms POST /v1/address] nodejs.MongoError: E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }
+    at Function.create (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\utils.js:149:22)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\operations\collection_ops.js:859:39
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 11000
+errmsg: "E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }"
+pid: 2932
+hostname: stu8-63
+
+2019-11-11 17:10:17,195 ERROR 2932 [-/127.0.0.1/-/11ms POST /v1/address] nodejs.MongoError: E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }
+    at Function.create (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\utils.js:149:22)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\operations\collection_ops.js:859:39
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 11000
+errmsg: "E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }"
+pid: 2932
+hostname: stu8-63
+
+2019-11-11 17:10:21,799 ERROR 2932 [-/127.0.0.1/-/6ms POST /v1/address] nodejs.MongoError: E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }
+    at Function.create (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\error.js:43:12)
+    at toError (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\utils.js:149:22)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb\lib\operations\collection_ops.js:859:39
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\mongodb-core\lib\connection\pool.js:397:18
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 11000
+errmsg: "E11000 duplicate key error collection: shoppingMall.address index: _id_ dup key: { : ObjectId('5dc900334f4f1e0b74498a29') }"
+pid: 2932
+hostname: stu8-63
+
+2019-11-12 14:17:36,664 ERROR 4560 [-/127.0.0.1/-/8ms POST /v1/order] nodejs.TypeError: Cannot read property 'length' of undefined
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:178:42)
+    at Object.callFn (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:19
+    at dispatch (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 4560
+hostname: stu8-63
+
+2019-11-12 14:21:33,062 ERROR 4560 [-/127.0.0.1/-/3ms POST /v1/order] nodejs.TypeError: Cannot read property 'count' of undefined
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:197:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4560
+hostname: stu8-63
+
+2019-11-12 14:21:33,931 ERROR 4560 [-/127.0.0.1/-/4ms POST /v1/order] nodejs.TypeError: Cannot read property 'count' of undefined
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:197:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4560
+hostname: stu8-63
+
+2019-11-12 14:21:36,301 ERROR 4560 [-/127.0.0.1/-/6ms POST /v1/order] nodejs.TypeError: Cannot read property 'count' of undefined
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:197:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4560
+hostname: stu8-63
+
+2019-11-14 09:38:16,345 ERROR 4268 [-/127.0.0.1/-/7ms POST /v1/order] nodejs.TypeError: Cannot read property 'present_price' of null
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:184:40)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4268
+hostname: stu8-63
+
+2019-11-14 09:38:19,771 ERROR 4268 [-/127.0.0.1/-/6ms POST /v1/order] nodejs.TypeError: Cannot read property 'present_price' of null
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:184:40)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4268
+hostname: stu8-63
+
+2019-11-14 09:42:35,512 ERROR 4268 [-/127.0.0.1/-/6ms POST /v1/order] nodejs.TypeError: Cannot read property 'present_price' of null
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:184:40)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4268
+hostname: stu8-63
+
+2019-11-14 09:42:37,280 ERROR 4268 [-/127.0.0.1/-/3ms POST /v1/order] nodejs.TypeError: Cannot read property 'present_price' of null
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:184:40)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4268
+hostname: stu8-63
+
+2019-11-14 09:44:32,011 ERROR 4268 [-/127.0.0.1/-/2ms POST /v1/order] nodejs.TypeError: Cannot read property 'present_price' of null
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:184:40)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4268
+hostname: stu8-63
+
+2019-11-14 09:44:33,567 ERROR 4268 [-/127.0.0.1/-/5ms POST /v1/order] nodejs.TypeError: Cannot read property 'present_price' of null
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:184:40)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4268
+hostname: stu8-63
+
+2019-11-16 08:58:20,646 ERROR 4572 [-/127.0.0.1/-/8ms POST /v1/order] nodejs.TypeError: Cannot read property 'count' of undefined
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:197:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4572
+hostname: stu8-63
+
+2019-11-16 09:18:34,551 ERROR 4572 [-/127.0.0.1/-/5ms POST /v1/order] nodejs.TypeError: Cannot read property 'count' of undefined
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:197:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4572
+hostname: stu8-63
+
+2019-11-16 09:18:35,846 ERROR 4572 [-/127.0.0.1/-/7ms POST /v1/order] nodejs.TypeError: Cannot read property 'count' of undefined
+    at OperatingGoodsController.order (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\controller\api\operatingGoods.js:197:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\app\middleware\isLogin.js:15:13
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-bodyparser\index.js:86:5)
+    at async C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\koa-static-cache\index.js:51:63
+    at async notfound (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\Users\Administrator.CDEDUASK_PC\Desktop\shopping\server\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 4572
+hostname: stu8-63
+
