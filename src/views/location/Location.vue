@@ -54,18 +54,18 @@
     props: {},
     data() {
       return {
-        value: '',
-        city:{},
-        arr:[],
+        value: '',      //同步输入框搜索值
+        city:{},          //装城市列表
+        arr:[],         //装过滤的城市列表
       }
     },
     methods: {
       back(){
-        this.$router.push('/mall')
+        this.$router.push('/mall')    //返回商城
       },
     },
     mounted() {
-      this.city=this.$city.data.cities
+      this.city=this.$city.data.cities       //城市列表
       console.log(this.city);
 
     },
@@ -75,11 +75,11 @@
     filters: {},
     computed: {
       get(){
-        return this.$store.state.city
+        return this.$store.state.city      //获取当前城市
       }
     },
     watch: {
-      value (val) {
+      value (val) {              //搜索
         // 说明输入框有值
         if (val.trim() !== '') {
           if (val.charCodeAt(0)>=65 && val.charCodeAt(0)<=90) {

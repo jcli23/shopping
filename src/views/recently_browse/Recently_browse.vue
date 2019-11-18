@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="top">
+    <div class="top">            <!--顶部-->
       <div class="icon" @click="back"><van-icon name="arrow-left" /></div>
       <div class="title">最近浏览</div>
     </div>
-    <div class="next">
+    <div class="next">               <!--浏览过的商品展示-->
       <div v-for="(item,index) in datalist" :key="index" class="every">
         <div class="img" @click="details(item.id)"><img :src=item.image_path alt=""></div>
         <div class="right">
@@ -14,7 +14,7 @@
             <div class="new">￥{{item.present_price}}</div>
           </div>
         </div>
-        <div class="icon" @click="del(index)"><van-icon name="close" /></div>
+        <div class="icon" @click="del(index)"><van-icon name="close" /></div>    <!--删除浏览历史-->
       </div>
     </div>
   </div>
@@ -29,18 +29,18 @@
     data() {
       return {
         user:'',
-        recentlyhistroy:'',
+        recentlyhistroy:'',        //装浏览历史的商品信息
         datalist:[]
       }
     },
     methods: {
-      back(){
+      back(){                        //返回我的
         this.$router.push('/my')
       },
-      details(id) {
+      details(id) {                //点击商品，查看详情页
         this.$router.push({ name: "commodity_details", query: { id: id } })
       },
-      del(index){
+      del(index){                //商城单个浏览的商品信息
         this.datalist.splice(index,1)
         localStorage.setItem(this.recentlyhistroy,JSON.stringify(this.datalist))
       }

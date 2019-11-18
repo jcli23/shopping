@@ -55,27 +55,27 @@
     props: {},
     data() {
       return {
-        code:'',
-        Code:'',
-        password:'',
-        username:''
+        code:'',          //二维码
+        Code:'',          //输入的二维码值
+        password:'',     //密码
+        username:''      //用户名
       }
     },
     methods: {
-      back(){
+      back(){                     //返回
         this.$router.go(-1)
       },
-      gerAverify(){
+      gerAverify(){                 //随机获取二维码
         axios.get(`api/verify?mt=${Math.random()}`).then(res=>{
           this.code=res.data;
         })
       },
-      replaceVerify(){
+      replaceVerify(){            //换二维码
         axios.get(`api/verify?mt=${Math.random()}`).then(res=>{
           this.code=res.data;
         })
       },
-      async register(){
+      async register(){          //注册
         try {
           let res = await this.$api.register(
               this.username,
@@ -98,7 +98,7 @@
           console.log(e);
         }
       },
-      async login(){
+      async login(){          //登录
         try {
           let res = await this.$api.login(
               this.username,

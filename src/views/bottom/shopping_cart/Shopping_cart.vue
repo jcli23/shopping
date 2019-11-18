@@ -5,7 +5,7 @@
       <div v-if="data.length!==0">
         <div class="order">
           <div class="choose">
-            <div @click="chooseAll">
+            <div @click="chooseAll">       <!--全选和取消全选 -->
               <div v-if="checkedAll===false" class="checkbox">
                 <img src="../../../../public/images/box.png" alt="">
                 <div>全选</div>
@@ -18,7 +18,7 @@
           </div>
           <div class="right">
             <div class="total">
-              <div>合计:</div>
+              <div>合计:</div>            <!--结算总和 -->
               <div class="price">￥{{total.toFixed(1)}} </div>
             </div>
             <div class="title">请确认订单</div>
@@ -30,7 +30,7 @@
         </div>
         <div v-for="(item,index) in data" :key="index" class="commodity">
           <div class="choose">
-            <div @click="choose(item,item.cid)">
+            <div @click="choose(item,item.cid)">     <!--未勾选和已勾选图标不同 -->
               <div v-if="item.check===false" class="checkbox">
                 <img src="../../../../public/images/box.png" alt="">
               </div>
@@ -39,7 +39,7 @@
               </div>
             </div>
           </div>
-          <div class="img">
+          <div class="img">                 <!--需要结算的商品信息 -->
             <img :src=item.image_path alt="">
           </div>
           <div class="right">
@@ -60,7 +60,7 @@
         </div>
         <div class="blank"></div>
       </div>
-      <div v-else class="shoppingnone">
+      <div v-else class="shoppingnone">           <!--购物车为空时，显示购物车没有商品 -->
         <div class="cart">
           <div class="cart_box">
             <img src="../../../../public/images/cartred.png" alt="">
@@ -70,7 +70,7 @@
         <van-button round type="default" class="button" @click="goto">去购物</van-button>
       </div>
     </div>
-    <div v-else class="loginout">
+    <div v-else class="loginout">                <!--未登录时的界面 -->
       <div class="Slogan">请~你还没有登录噢~</div>
       <van-button round type="info" class="button" @click="gologin">立即登录</van-button>
     </div>
@@ -86,17 +86,17 @@
     props: {},
     data() {
       return {
-        id: "",
-        data:[],
-        user:null,
-        checkedAll: false,
-        checked:false,
-        cid:[],
-        checkeddata:[]
+        id: "",               //商品ID
+        data:[],              //接收加入过购物车的商品所有信息
+        user:null,            //用来定义用户信息
+        checkedAll: false,     //全选开关
+        checked:false,         //单选开关
+        cid:[],                //装勾选过得序列号
+        checkeddata:[]         //装勾选的商品
       }
     },
     methods: {
-      async getCard(){
+      async getCard(){                //获取购物车信息
         try {
           let res=await this.$api.getCard();
           this.data=res.shopList
@@ -106,10 +106,10 @@
         }
       },
       goto(){
-        this.$router.push('/mall')
+        this.$router.push('/mall')     //购物车无商品，跳转商城页面
       },
       async reduce(item){
-        item.count-=1
+        item.count-=1                       //提交上传
         try {
           let res=await this.$api.editCart(
               item.count,
@@ -123,7 +123,7 @@
           console.log(e);
         }
       },
-      async del(){
+      async del(){                              //删除购物车的商品
         try {
           let res=await this.$api.deleteShop(this.cid);
           if(res.code===200){
@@ -134,7 +134,7 @@
           console.log(e);
         }
       },
-      Settlement(){
+      Settlement(){                      //跳转订单结算，并把选择结算的商品数据传过去
         this.data.map(item=>{
           if(item.check){
             this.checkeddata.push(item)
@@ -143,7 +143,7 @@
         })
         this.$router.push({name:'order_settlement',query:{checkeddata:this.checkeddata}})
       },
-      async add(item){
+      async add(item){                  //添加购买数量
         item.count+=1
         try {
           let res=await this.$api.editCart(
@@ -158,7 +158,7 @@
           console.log(e);
         }
       },
-      chooseAll(){
+      chooseAll(){                          //全选按钮相应的操作
         this.checkedAll=!this.checkedAll
         if(this.checkedAll===false){
           this.cid=[]
@@ -173,7 +173,7 @@
           }
         })
       },
-      choose(item,id){
+      choose(item,id){                      //单选按钮的相应操作
         item.check=!item.check
         if(item.check){
           this.checked=true
@@ -190,7 +190,7 @@
           return item.check===false
         })
       },
-      gologin(){
+      gologin(){                                       //未登录时跳转登录
         this.$router.push("/login_registration")
       }
     },
@@ -204,7 +204,7 @@
     filters: {},
     computed: {
       total () {
-       let total=0;
+       let total=0;                     //计算总价
        this.data.map(item=>{
           if(item.check){
             total+=(item.present_price*item.count)

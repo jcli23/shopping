@@ -105,11 +105,11 @@
       return {
         user:null,
         active: 1,
-        checkeddata:[],
-        addresschoose:{},
-        defaultAdd:{},
+        checkeddata:[],      //选择结算的
+        addresschoose:{},    //地址选择
+        defaultAdd:{},         //添加默认地址
         total:0,
-        count: 0,
+        count: 0,            //家购买数量
         id:[],
         idDirect: false
       }
@@ -118,13 +118,13 @@
       back(){
         this.$router.push('/shopping_cart')
       },
-      add(path) {
+      add(path) {                    //添加地址，跳转地址页面
         this.$router.push(path);
       },
       addto(id) {
         this.$router.push({ name: "address", query: { id: id } });
       },
-      async onSubmit(){
+      async onSubmit(){              //结算
         try {
           let res=await this.$api.placeOrder({
             address: this.defaultAdd.address,
@@ -141,7 +141,7 @@
           console.log(e);
         }
       },
-      async getDefaultAddress(){
+      async getDefaultAddress(){         //获取默认地址
         try {
           let res=await this.$api.getDefaultAddress();
           this.defaultAdd=res.defaultAdd
@@ -153,9 +153,9 @@
     },
     mounted() {
       this.getDefaultAddress()
-      this.addresschoose=this.$route.query.addresschoose
+      this.addresschoose=this.$route.query.addresschoose     //选择的地址
       // console.log(this.addresschoose,3);
-      this.checkeddata=this.$route.query.checkeddata
+      this.checkeddata=this.$route.query.checkeddata        //选择的商品
       console.log(this.checkeddata,4);
       this.checkeddata.map(item=>{
         if(item.idDirect){
@@ -167,7 +167,7 @@
           this.id.push(item.id);
           console.log(this.id,2);
         }else{
-          this.total+=(item.present_price*item.count)
+          this.total+=(item.present_price*item.count)      //计算总价
           // console.log(this.total);
           this.count += item.count;
           console.log(this.count,1);

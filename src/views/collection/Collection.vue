@@ -1,12 +1,12 @@
 <template>
   <div>
     <div v-if="user">
-      <div class="top">
+      <div class="top">                <!--登录时，顶部 -->
         <div class="icon" @click="back"><van-icon name="arrow-left" /></div>
         <div class="title">我的收藏</div>
       </div>
     </div>
-    <div v-else>
+    <div v-else>                      <!--未登录时 -->
       <div class="top">
         <div class="icon" @click="back"><van-icon name="arrow-left" /></div>
         <div class="title">我的收藏</div>
@@ -15,7 +15,7 @@
         <div class="title">请先登录噢~~~</div>
       </div>
     </div>
-    <div v-for="(item,index) in list" :key="index">
+    <div v-for="(item,index) in list" :key="index">       <!--购物过收藏的商品 -->
       <div class="box">
         <div class="img"><img :src=item.image_path alt=""></div>
         <div class="center">
@@ -44,9 +44,9 @@
     },
     methods: {
       back(){
-        this.$router.go(-1)
+        this.$router.go(-1)          //返回上一步操作
       },
-      async getCollection(){
+      async getCollection(){          //获取收藏过得商品信息
         try {
           let res=await this.$api.getCollection();
           console.log(res,1);
@@ -55,7 +55,7 @@
           console.log(e);
         }
       },
-      async cancelCollection(id){
+      async cancelCollection(id){          //取消收藏
         try {
           let res=await this.$api.cancelCollection(id);
           if(res.code===200){
@@ -67,7 +67,7 @@
       },
     },
     mounted() {
-      this.user = JSON.parse(localStorage.user)
+      this.user = JSON.parse(localStorage.user)   //本地拿到用户信息
       this.getCollection()
     },
     created() {

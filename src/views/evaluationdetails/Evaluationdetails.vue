@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="top">
+    <div class="top">              <!--顶部 -->
       <div class="icon" @click="back"><van-icon name="arrow-left" /></div>
       <div class="title">评价详情</div>
     </div>
@@ -61,9 +61,9 @@
       }
     },
     mounted() {
-      this.list = this.$route.query.item
+      this.list = this.$route.query.item       //接受评价过的商品
       console.log(this.list,3);
-      this.user = JSON.parse(localStorage.user)
+      this.user = JSON.parse(localStorage.user)   //拿到用户信息
       console.log(this.user);
     },
     created() {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="back"><img src="../../../public/images/jiantou_white.png" alt="" @click="back"></div>
-    <div class="scroll">
+    <div class="scroll">                       <!--图片预览-->
       <van-swipe :autoplay="3000" indicator-color="white" @change="onChange">
         <van-swipe-item><img :src=data.image_path alt="" @click="big()"></van-swipe-item>
         <van-swipe-item><img :src=data.image_path alt="" @click="big()"></van-swipe-item>
@@ -45,10 +45,11 @@
           <div v-html=data.detail></div>
           <div class="white"></div>
         </van-tab>
-        <van-tab title="商品评论">
+        <van-tab title="商品评论">           <!--商品无评论时 -->
           <div v-if="listover.comment.length===0">
             暂无评论
           </div>
+          <!--有评论时-->
           <div v-else v-for="(item,index) in listover.comment" :key="index" class="evaluate">
             <div class="evaluate_box">
               <div class="avatar">
@@ -79,7 +80,7 @@
       </van-tabs>
       <div class="white"></div>
     </div>
-    <div class="bottom">
+    <div class="bottom">                 <!--底部-->
       <van-goods-action>
         <van-goods-action-icon icon="chat-o" text="客服"  />
         <van-goods-action-icon icon="cart-o" text="购物车" :info=count @click="push" />
@@ -88,6 +89,7 @@
         <van-popup v-model="show"
                    position="bottom"
                    :style="{ height: '40%' }">
+          <!--立即购买弹出层-->
           <div class="eject_top">
             <div class="left">
               <img :src=data.image_path alt="">
@@ -134,19 +136,19 @@
       return {
         current:0,
         id: "",
-        color:0,
-        show: false,
+        color:0,              //定于取消按钮背景颜色开关
+        show: false,         //弹出层开关
         page:1,
-        user:{},
-        data:{},
+        user:{},             //接收用户信息
+        data:{},             //装需要展示的商品详情信息
         value: 1,
-        count:0,
+        count:0,               //装购买数量
         recentlyhistroy:'',
         listover:{}
       }
     },
     methods: {
-      unshift(){
+      unshift(){                  //浏览过详情页，创建历史
         if(this.user){
           let datalist=JSON.parse(localStorage.getItem(this.recentlyhistroy))
           if(datalist.length===0) {
@@ -162,7 +164,7 @@
           localStorage.setItem(this.recentlyhistroy,JSON.stringify(datalist))
         }
       },
-      async goodOne(){
+      async goodOne(){               //接收单个详情商品的信息
         try {
           let res=await this.$api.goodOne(this.id,this.page);
           this.data=res.goods.goodsOne;
@@ -174,14 +176,14 @@
           console.log(e);
         }
       },
-      purchase(item){
+      purchase(item){                   //立即购买的结算
         this.$set(item,"idDirect",true)
         this.$set(item,"count",this.value)
         let list= []
         list.push(item)
         this.$router.push({name:'order_settlement',query:{checkeddata:list}})
       },
-      async isCollection(){
+      async isCollection(){               //查询是否收藏
         try {
           let res=await this.$api.isCollection(this.id);
           this.color=res.isCollection
@@ -189,7 +191,7 @@
           console.log(e);
         }
       },
-      async collection(){
+      async collection(){                       //加入收藏
         try {
           let res=await this.$api.collection(this.data);
           if(res.code===200){
@@ -201,10 +203,10 @@
           console.log(e);
         }
       },
-      out(){
+      out(){                      //弹出层按钮
         this.show=!this.show
       },
-      async cancelCollection(id){
+      async cancelCollection(id){               //取消收藏
         try {
           let res=await this.$api.cancelCollection(id);
           if(res.code===200){
@@ -216,10 +218,10 @@
           console.log(e);
         }
       },
-      push(){
+      push(){                      //点击购物车，跳转购物车页面
         this.$router.push("/shopping_cart")
       },
-      async addShop(){
+      async addShop(){               //加入购物车
         this.count+=1
         try{
           let res=await this.$api.addShop(this.data.id);
@@ -232,7 +234,7 @@
           console.log(e);
         }
       },
-      showPopup() {
+      showPopup() {                //弹出层
         this.show = true;
       },
       onChange(index) {
@@ -241,7 +243,7 @@
       back(){
         this.$router.push('/mall')   //点击返回上一个操作页面
       },
-      big(){
+      big(){                     //大图浏览
          ImagePreview([
            this.data.image,
            this.data.image
@@ -256,11 +258,11 @@
       }
     },
     mounted() {
-      this.id = this.$route.query.id;
+      this.id = this.$route.query.id;             //接收id
       this.goodOne()
-      this.user = JSON.parse(localStorage.user).nickname
+      this.user = JSON.parse(localStorage.user).nickname       //接收用户名
       console.log(this.user,6);
-      this.recentlyhistroy=this.user+"recentlyhistroy"
+      this.recentlyhistroy=this.user+"recentlyhistroy"           //创建本地历史
       let recently=JSON.parse(localStorage.getItem(this.recentlyhistroy))
       if(recently===null){
         localStorage.setItem(this.recentlyhistroy,JSON.stringify([]))

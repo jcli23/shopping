@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div v-if="user">
+    <div v-if="user">           <!--登录时-->
       <div class="top">
         <div class="icon" @click="back"><van-icon name="arrow-left" /></div>
         <div class="title">我的订单</div>
@@ -43,7 +43,7 @@
         </van-tab>
       </van-tabs>
     </div>
-    <div v-else>
+    <div v-else>              <!--未登录时-->
       <div class="top">
         <div class="icon" @click="back"><van-icon name="arrow-left" /></div>
         <div class="title">我的订单</div>
@@ -89,7 +89,7 @@
       return {
         user:null,
         active: 1,
-        list:[],
+        list:[],     //装完成结算的商品信息
         sum:0,
       }
     },
@@ -97,7 +97,7 @@
       back(){
         this.$router.go(-1)
       },
-      async getMyOrder(){
+      async getMyOrder(){          //获取完成结算的订单商品信息
         try {
           let res=await this.$api.getMyOrder();
           this.list=res.list
@@ -108,7 +108,7 @@
       },
     },
     mounted() {
-      this.user = JSON.parse(localStorage.user);
+      this.user = JSON.parse(localStorage.user);      //获取用户信息
       this.getMyOrder()
     },
     created() {

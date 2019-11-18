@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="top">
+    <div class="top">                   <!--顶部-->
       <div class="icon" @click="back"><van-icon name="arrow-left" /></div>
       <div class="title">评价中心</div>
     </div>
     <div class="img">
       <img src="../../../public/images/evaluate.jpg" alt="">
     </div>
-    <div class="main">
+    <div class="main">                 <!--未评价部分-->
       <van-tabs class="button">
         <van-tab title="待评价">
           <div>
@@ -21,7 +21,7 @@
             </div>
           </div>
         </van-tab>
-        <van-tab title="已评价">
+        <van-tab title="已评价">               <!--已评价部分-->
           <div>
             <div v-for="(item,index) in listover" :key="index">
               <div v-for="(content,index) in item.goods" :key="index" class="box">
@@ -48,11 +48,11 @@
     props: {},
     data() {
       return {
-        list:[],
-        listover:[],
+        list:[],             //装完成交易的商品
+        listover:[],          //装评论完成的商品
       }
     },
-    methods: {
+    methods: {                         //查询待评价
       async tobeEvaluated(){
         try {
           let res=await this.$api.tobeEvaluated();
@@ -62,7 +62,7 @@
           console.log(e);
         }
       },
-      async alreadyEvaluated(){
+      async alreadyEvaluated(){             //查询已评价
         try {
           let res=await this.$api.alreadyEvaluated();
           this.listover=res.data.list
@@ -72,13 +72,13 @@
         }
       },
 
-      back(){
+      back(){                                //返回我的页面
         this.$router.push('/my')
       },
-      goto(item){
+      goto(item){                            //跳转评价页面
         this.$router.push({name:'evaluate',query:{item:item}})
       },
-      goto2(item){
+      goto2(item){                           //跳转查看评价页面
         this.$router.push({name:'evaluationdetails',query:{item:item}})
       }
     },

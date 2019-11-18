@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="top">
+    <div class="top">              <!--顶部 -->
       <div class="icon" @click="back"><van-icon name="arrow-left" /></div>
       <div class="title">评价中心</div>
     </div>
@@ -52,24 +52,24 @@
     props: {},
     data() {
       return {
-        checked: false,
-        value: 0,
-        list:{},
-        message:''
+        checked: false,          //判断是否匿名
+        value: 0,                //评分值
+        list:{},                 //需要评论的商品
+        message:''                //装输入的评论内容
       }
     },
     methods: {
       back(){
-        this.$router.go(-1)
+        this.$router.go(-1)         //返回上一步操作
       },
       afterRead(file) {
         // 此时可以自行将文件上传至服务器
         console.log(file);
       },
       check(){
-        this.checked=!this.checked
+        this.checked=!this.checked        //是否匿名
       },
-      async submit(){
+      async submit(){                  //提交评论
         try {
           let res=await this.$api.comment({
             id: this.list.cid,
@@ -91,7 +91,7 @@
     },
     mounted() {
       this.list = this.$route.query.item
-      console.log(this.list,1);
+      // console.log(this.list,1);
     },
     created() {
 
